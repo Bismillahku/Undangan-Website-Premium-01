@@ -1,0 +1,217 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.cover {
+      position: absolute;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      text-align: center;
+      z-index: 4;
+  }
+
+.cover #gambar {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    object-fit: pembuka;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; /* Gambar di belakang */
+    transition: transform 1s ease, opacity 1s ease;
+  }
+
+
+.hide-up {
+      transform: translateY(-200px); /* geser ke atas */
+      opacity: 0; /* menghilang */
+    }
+
+.cover #text-cover {
+    flex-direction: column;
+    position: relative;
+    bottom: 30px;
+    z-index: 4; /* Teks di atas gambar */
+    color: rgb(42, 24, 24);
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+
+.pembuka {
+    position: relative;
+    width: 100vw;
+    min-height: 850px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.pembuka video {
+    position: absolute;
+    width: 100%;
+    max-width: 480px;
+    height: 100%;
+    object-fit: pembuka;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Gambar di belakang */
+  }
+
+#text-pembuka {
+    display: flexbox;
+    flex-direction: column;
+    position: relative;
+    bottom: 30px;
+    z-index: 2; /* Teks di atas gambar */
+    color: rgb(42, 24, 24);
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.text {
+    opacity: 0;
+    transform: translateY(-200px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.muncul {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 5s;
+}
+
+body {
+  margin: 0;
+  height: 700vh;
+  background-image: url('SUJA-CVR-DSKTP-PII-scaled-1.webp'); /* dari folder lokal */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+body.lock{
+  overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#with-love-background {
+    position: relative;
+    width: 100vw;
+    height: 540px;
+    overflow: hidden;
+
+  }
+
+#with-love-background .gambar-with-love{
+  width: 100%;
+  height: 200px;
+  background-color: aqua;
+  border-radius: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#with-love-background .element1-with-love{
+  position: absolute;
+  left: 250px;
+  top: 30px;
+  align-items: center;
+  width: 50%;
+  height: auto;
+  
+  animation: rotasi-bunga 5s infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: right bottom; /* pusat putar di bawah tengah */
+}
+
+#with-love-background .element2-with-love{
+  position: absolute;
+  right: 250px;
+  top: 30px;
+  align-items: center;
+  width: 50%;
+  height: auto;
+  animation: rotasi-bunga2 5s infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: left bottom; /* pusat putar di bawah tengah */
+
+}
+
+@keyframes rotasi-bunga {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes rotasi-bunga2 {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+
+#with-love {
+    display: flexbox;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+    max-width: 480px;
+    background-color: #fff0e5;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#with-love-animate {
+  /* Awal posisi tersembunyi */
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 0.4s ease-out;
+  will-change: transform, opacity;
+}
+
+#with-love-animate.animate{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+

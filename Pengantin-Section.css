@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#container-pengantin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh; /* agar tetap responsif */
+  background-size: cover;
+  background-position: center;
+
+}
+
+#penengah-pengantin {
+  padding: 20px;
+  max-width: 480px;
+  background-position: center;
+  background-image: url('SUJA-CVR-MOBILE-PII-1.webp');
+}
+
+#shape-bg-pengantin {
+  background-color: #FDEFD5E9;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#content-pengantin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+#content-pengantin img {
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+#content-pengantin button{
+  height: 28px;
+  width: 28px;
+  border-radius: 100%;
+  background-color: #7c2527;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#content-pengantin button img{
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
