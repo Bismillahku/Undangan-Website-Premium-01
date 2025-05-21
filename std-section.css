@@ -1,1 +1,43 @@
+    <!--Save The Date Section-->
+    <div id="std-section">
+        <div id="std-penengah">
+            <div id="std-content">
+                <p>SAVE THE DATE</p>
+                <div id="std-countdown">
+                    <div id="std-hari">
+                        <p>00</p>
+                        <p>hari</p>
+                    </div>
+                    <div id="std-jam">
+                        <p>00</p>
+                        <p>jam</p>
+                    </div>
+                    <div id="std-menit">
+                        <p>00</p>
+                        <p>hari</p>
+                    </div>
+                    <div id="std-detik">
+                        <p>00</p>
+                        <p>detik</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+#std-section {
+  position: relative;
+  width: 100vw;
+  background-color: black;
+  color: white;
+}
+
+#std-penengah {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate (-50%, -50%)
+}
+
+
 
