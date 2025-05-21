@@ -1,0 +1,54 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#std-coundown-bg{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+#std-center-shape{
+    position: absolute;
+    background-color: aquamarine;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#std-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 90px;
+}
+
+#std-content .judul {
+    font-size: 80px;
+}
+
+
+#text-count{
+    display: flex;
+    padding: 30px;
+}
+
+.countdown{
+    padding: 50px;
+    background-color: azure;
+    margin: 15px;
+    width: 80px;
+    border-radius: 15px;
+}
+
